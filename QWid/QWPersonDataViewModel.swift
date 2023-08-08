@@ -26,6 +26,11 @@ class QWPersonDataViewModel: ObservableObject {
         finannceController.calculateOuncesSinceQuit(quitDate: userQuestionary.selectedDate, oncesPerDay: Double(userQuestionary.selectedAmountOfConcumption))
     }
     
+    var jointsNotSmoked: Int {
+        let joints = ouncesNotSmoked / 0.75
+        return Int(joints)  // Convert the result to an integer to get the whole number of joints
+    }
+    
     var totalSavedFormattedString: String {
         String(format: "%.1f", totalSaved)
     }

@@ -58,7 +58,15 @@ class QWHealthController  {
         sortImprovementSince(quitDate: model!.selectedDate)
     }
     
-    var showHealthDescriptions: [String] {
+//    var showHealthDescriptions: [String] {
+//        if model != nil {
+//           return showHealthImprovement(quitDate: model!.selectedDate)
+//        } else {
+//            return []
+//        }
+//    }
+    
+    var showHealthDescriptions: [(Int, String)] {
         if model != nil {
            return showHealthImprovement(quitDate: model!.selectedDate)
         } else {
@@ -147,9 +155,34 @@ class QWHealthController  {
         
     }
     
-    func showHealthImprovement(quitDate: Date) -> [String] {
+//    func showHealthImprovement(quitDate: Date) -> [String] {
+//        let quitDateInSeconds = Int(Date().timeIntervalSince(quitDate))
+//        var matchingDescriptions: [String] = []
+//        var counter = 0
+//
+//        for (time, description) in sortedTupleSinceQuitDay {
+//            if counter < 4 {
+//                counter += 1
+//                continue
+//            }
+//
+//            let seconds = secondsFrom(string: time)
+//
+//            if seconds == -1 {
+//                matchingDescriptions.append(description)
+//            } else {
+//                if quitDateInSeconds <= seconds {
+//                    matchingDescriptions.append(description)
+//                }
+//            }
+//        }
+//
+//        return matchingDescriptions
+//    }
+    
+    func showHealthImprovement(quitDate: Date) -> [(Int, String)] {
         let quitDateInSeconds = Int(Date().timeIntervalSince(quitDate))
-        var matchingDescriptions: [String] = []
+        var matchingDescriptions: [(Int, String)] = []
         var counter = 0
 
         for (time, description) in sortedTupleSinceQuitDay {
@@ -161,16 +194,17 @@ class QWHealthController  {
             let seconds = secondsFrom(string: time)
 
             if seconds == -1 {
-                matchingDescriptions.append(description)
+                matchingDescriptions.append((-1, description))
             } else {
                 if quitDateInSeconds <= seconds {
-                    matchingDescriptions.append(description)
+                    matchingDescriptions.append((seconds, description))
                 }
             }
         }
 
         return matchingDescriptions
     }
+
     
     func secondsSinceDate(_ date: Date) -> TimeInterval {
         let now = Date()

@@ -26,6 +26,10 @@
 		CAD995AB2A81B1E000EA66ED /* QWSavingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD995AA2A81B1E000EA66ED /* QWSavingsView.swift */; };
 		CAD995AD2A81F95B00EA66ED /* QWProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD995AC2A81F95B00EA66ED /* QWProgressView.swift */; };
 		CAD995AF2A8200AC00EA66ED /* QWMarqueeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD995AE2A8200AC00EA66ED /* QWMarqueeView.swift */; };
+		CAD995B12A82CC8C00EA66ED /* QWTimeBasedProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD995B02A82CC8C00EA66ED /* QWTimeBasedProgressView.swift */; };
+		CAD995B32A82CE2000EA66ED /* QWCircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD995B22A82CE2000EA66ED /* QWCircleProgressView.swift */; };
+		CAD995B52A82D27700EA66ED /* QWMainBenefitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD995B42A82D27700EA66ED /* QWMainBenefitsView.swift */; };
+		CAD995B72A82EDC000EA66ED /* QWTimerDateStringRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD995B62A82EDC000EA66ED /* QWTimerDateStringRepresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +53,10 @@
 		CAD995AA2A81B1E000EA66ED /* QWSavingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWSavingsView.swift; sourceTree = "<group>"; };
 		CAD995AC2A81F95B00EA66ED /* QWProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWProgressView.swift; sourceTree = "<group>"; };
 		CAD995AE2A8200AC00EA66ED /* QWMarqueeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWMarqueeView.swift; sourceTree = "<group>"; };
+		CAD995B02A82CC8C00EA66ED /* QWTimeBasedProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWTimeBasedProgressView.swift; sourceTree = "<group>"; };
+		CAD995B22A82CE2000EA66ED /* QWCircleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWCircleProgressView.swift; sourceTree = "<group>"; };
+		CAD995B42A82D27700EA66ED /* QWMainBenefitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWMainBenefitsView.swift; sourceTree = "<group>"; };
+		CAD995B62A82EDC000EA66ED /* QWTimerDateStringRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWTimerDateStringRepresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +73,10 @@
 		CA91894B2A79C106007ECD01 = {
 			isa = PBXGroup;
 			children = (
+				CAD995B62A82EDC000EA66ED /* QWTimerDateStringRepresentable.swift */,
+				CAD995B42A82D27700EA66ED /* QWMainBenefitsView.swift */,
+				CAD995B22A82CE2000EA66ED /* QWCircleProgressView.swift */,
+				CAD995B02A82CC8C00EA66ED /* QWTimeBasedProgressView.swift */,
 				CAD995AE2A8200AC00EA66ED /* QWMarqueeView.swift */,
 				CAD995AC2A81F95B00EA66ED /* QWProgressView.swift */,
 				CAD995AA2A81B1E000EA66ED /* QWSavingsView.swift */,
@@ -186,13 +198,17 @@
 				CA91896D2A79C8FC007ECD01 /* QWQAView.swift in Sources */,
 				CAD995AF2A8200AC00EA66ED /* QWMarqueeView.swift in Sources */,
 				CA91897B2A7ACC25007ECD01 /* QWJSONRepresentable.swift in Sources */,
+				CAD995B52A82D27700EA66ED /* QWMainBenefitsView.swift in Sources */,
 				CAD995AB2A81B1E000EA66ED /* QWSavingsView.swift in Sources */,
 				CA9189612A79C108007ECD01 /* Persistence.swift in Sources */,
+				CAD995B32A82CE2000EA66ED /* QWCircleProgressView.swift in Sources */,
 				CA91895A2A79C106007ECD01 /* ContentView.swift in Sources */,
 				CAD995AD2A81F95B00EA66ED /* QWProgressView.swift in Sources */,
 				CA9189712A79F3CD007ECD01 /* QWPersonDataViewModel.swift in Sources */,
 				CA9189732A79F737007ECD01 /* QWTimeRepresentable.swift in Sources */,
 				CA9189642A79C108007ECD01 /* QWid.xcdatamodeld in Sources */,
+				CAD995B12A82CC8C00EA66ED /* QWTimeBasedProgressView.swift in Sources */,
+				CAD995B72A82EDC000EA66ED /* QWTimerDateStringRepresentable.swift in Sources */,
 				CA91896B2A79C1A5007ECD01 /* QWHomeView.swift in Sources */,
 				CA91896F2A79F2F1007ECD01 /* QWPersonData.swift in Sources */,
 				CA9189772A7A0647007ECD01 /* QWFinanceController.swift in Sources */,

@@ -10,7 +10,7 @@ import SwiftUI
 struct ProgressView: View {
     let progressProvider: () -> Double
     let restartInterval: Double
-    let maxValue: Double = 1.0  // Since our progress always goes from 0 to 1
+    let maxValue: Double = 1.0
     
     @State private var animationProgress: Double = 0.0
     @State private var shouldRestartAnimation: Bool = false
@@ -19,14 +19,16 @@ struct ProgressView: View {
     var body: some View {
         GeometryReader { geometry in
             Rectangle()
-                .fill(Color.blue)
-                .frame(width: shouldRestartAnimation ? 0 : geometry.size.width * CGFloat(animationProgress), height: 30)
+                .fill(Color.blue.opacity(0.1))
+                .frame(width: shouldRestartAnimation ? 0 : geometry.size.width * CGFloat(animationProgress), height: 10)
                 .animation(.easeInOut(duration: 1.0), value: shouldRestartAnimation)
         }
         .onAppear {
             startAnimationTimer()
         }
     }
+    
+    
     
     private func startAnimationTimer() {
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
@@ -38,4 +40,5 @@ struct ProgressView: View {
             }
         }
     }
+    
 }

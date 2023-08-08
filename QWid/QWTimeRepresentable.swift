@@ -46,9 +46,49 @@ struct QWTimeRepresentable {
     }
     
     var fullDateToString: String {
-        let date = "\(years) Years \(months) Month \(weeks) weeks \(days) Days \(hours) Hours \(minutes) Minutes".uppercased()
-        return date
+        var dateComponents = [String]()
+
+        if years == 1 {
+            dateComponents.append("\(years) Year")
+        } else if years > 1 {
+            dateComponents.append("\(years) Years")
+        }
+
+        if months == 1 {
+            dateComponents.append("\(months) Month")
+        } else if months > 1 {
+            dateComponents.append("\(months) Months")
+        }
+
+        if weeks == 1 {
+            dateComponents.append("\(weeks) Week")
+        } else if weeks > 1 {
+            dateComponents.append("\(weeks) Weeks")
+        }
+
+        if days == 1 {
+            dateComponents.append("\(days) Day")
+        } else if days > 1 {
+            dateComponents.append("\(days) Days")
+        }
+
+        if hours == 1 {
+            dateComponents.append("\(hours) Hour")
+        } else if hours > 1 {
+            dateComponents.append("\(hours) Hours")
+        }
+
+        if minutes == 1 {
+            dateComponents.append("\(minutes) Minute")
+        } else if minutes > 1 {
+            dateComponents.append("\(minutes) Minutes")
+        }
+        
+        let output = dateComponents.joined(separator: " ").uppercased()
+        
+        return output
     }
+
     
     var timeInSecondsSinceQuit: Int {
         return Int(timeSinceQuit)
