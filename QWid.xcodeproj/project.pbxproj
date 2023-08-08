@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA9189582A79C106007ECD01 /* QWidApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9189572A79C106007ECD01 /* QWidApp.swift */; };
+		CA91895A2A79C106007ECD01 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9189592A79C106007ECD01 /* ContentView.swift */; };
+		CA91895C2A79C108007ECD01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA91895B2A79C108007ECD01 /* Assets.xcassets */; };
+		CA91895F2A79C108007ECD01 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA91895E2A79C108007ECD01 /* Preview Assets.xcassets */; };
+		CA9189612A79C108007ECD01 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9189602A79C108007ECD01 /* Persistence.swift */; };
+		CA9189642A79C108007ECD01 /* QWid.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA9189622A79C108007ECD01 /* QWid.xcdatamodeld */; };
+		CA91896B2A79C1A5007ECD01 /* QWHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA91896A2A79C1A5007ECD01 /* QWHomeView.swift */; };
+		CA91896D2A79C8FC007ECD01 /* QWQAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA91896C2A79C8FC007ECD01 /* QWQAView.swift */; };
+		CA91896F2A79F2F1007ECD01 /* QWPersonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA91896E2A79F2F1007ECD01 /* QWPersonData.swift */; };
+		CA9189712A79F3CD007ECD01 /* QWPersonDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9189702A79F3CD007ECD01 /* QWPersonDataViewModel.swift */; };
+		CA9189732A79F737007ECD01 /* QWTimeRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9189722A79F737007ECD01 /* QWTimeRepresentable.swift */; };
+		CA9189772A7A0647007ECD01 /* QWFinanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9189762A7A0647007ECD01 /* QWFinanceController.swift */; };
+		CA9189792A7ACBFF007ECD01 /* QWHealthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9189782A7ACBFF007ECD01 /* QWHealthController.swift */; };
+		CA91897B2A7ACC25007ECD01 /* QWJSONRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA91897A2A7ACC25007ECD01 /* QWJSONRepresentable.swift */; };
+		CA91897D2A7AE38D007ECD01 /* QWJSONHealthData.json in Resources */ = {isa = PBXBuildFile; fileRef = CA91897C2A7ACF29007ECD01 /* QWJSONHealthData.json */; };
+		CAD995A92A7F0B8000EA66ED /* QWDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD995A82A7F0B8000EA66ED /* QWDatePicker.swift */; };
+		CAD995AB2A81B1E000EA66ED /* QWSavingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD995AA2A81B1E000EA66ED /* QWSavingsView.swift */; };
+		CAD995AD2A81F95B00EA66ED /* QWProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD995AC2A81F95B00EA66ED /* QWProgressView.swift */; };
+		CAD995AF2A8200AC00EA66ED /* QWMarqueeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD995AE2A8200AC00EA66ED /* QWMarqueeView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CA9189542A79C106007ECD01 /* QWid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QWid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA9189572A79C106007ECD01 /* QWidApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWidApp.swift; sourceTree = "<group>"; };
+		CA9189592A79C106007ECD01 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CA91895B2A79C108007ECD01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA91895E2A79C108007ECD01 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CA9189602A79C108007ECD01 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		CA9189632A79C108007ECD01 /* QWid.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QWid.xcdatamodel; sourceTree = "<group>"; };
+		CA91896A2A79C1A5007ECD01 /* QWHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWHomeView.swift; sourceTree = "<group>"; };
+		CA91896C2A79C8FC007ECD01 /* QWQAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWQAView.swift; sourceTree = "<group>"; };
+		CA91896E2A79F2F1007ECD01 /* QWPersonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWPersonData.swift; sourceTree = "<group>"; };
+		CA9189702A79F3CD007ECD01 /* QWPersonDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWPersonDataViewModel.swift; sourceTree = "<group>"; };
+		CA9189722A79F737007ECD01 /* QWTimeRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWTimeRepresentable.swift; sourceTree = "<group>"; };
+		CA9189762A7A0647007ECD01 /* QWFinanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWFinanceController.swift; sourceTree = "<group>"; };
+		CA9189782A7ACBFF007ECD01 /* QWHealthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWHealthController.swift; sourceTree = "<group>"; };
+		CA91897A2A7ACC25007ECD01 /* QWJSONRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWJSONRepresentable.swift; sourceTree = "<group>"; };
+		CA91897C2A7ACF29007ECD01 /* QWJSONHealthData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = QWJSONHealthData.json; sourceTree = "<group>"; };
+		CAD995A82A7F0B8000EA66ED /* QWDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QWDatePicker.swift; sourceTree = "<group>"; };
+		CAD995AA2A81B1E000EA66ED /* QWSavingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWSavingsView.swift; sourceTree = "<group>"; };
+		CAD995AC2A81F95B00EA66ED /* QWProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWProgressView.swift; sourceTree = "<group>"; };
+		CAD995AE2A8200AC00EA66ED /* QWMarqueeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWMarqueeView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA9189512A79C106007ECD01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA91894B2A79C106007ECD01 = {
+			isa = PBXGroup;
+			children = (
+				CAD995AE2A8200AC00EA66ED /* QWMarqueeView.swift */,
+				CAD995AC2A81F95B00EA66ED /* QWProgressView.swift */,
+				CAD995AA2A81B1E000EA66ED /* QWSavingsView.swift */,
+				CA91897C2A7ACF29007ECD01 /* QWJSONHealthData.json */,
+				CA9189562A79C106007ECD01 /* QWid */,
+				CA9189552A79C106007ECD01 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA9189552A79C106007ECD01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA9189542A79C106007ECD01 /* QWid.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA9189562A79C106007ECD01 /* QWid */ = {
+			isa = PBXGroup;
+			children = (
+				CA9189572A79C106007ECD01 /* QWidApp.swift */,
+				CA9189592A79C106007ECD01 /* ContentView.swift */,
+				CA91895B2A79C108007ECD01 /* Assets.xcassets */,
+				CA9189602A79C108007ECD01 /* Persistence.swift */,
+				CA9189622A79C108007ECD01 /* QWid.xcdatamodeld */,
+				CA91895D2A79C108007ECD01 /* Preview Content */,
+				CA91896A2A79C1A5007ECD01 /* QWHomeView.swift */,
+				CA9189702A79F3CD007ECD01 /* QWPersonDataViewModel.swift */,
+				CA91896C2A79C8FC007ECD01 /* QWQAView.swift */,
+				CA91896E2A79F2F1007ECD01 /* QWPersonData.swift */,
+				CA9189722A79F737007ECD01 /* QWTimeRepresentable.swift */,
+				CA9189762A7A0647007ECD01 /* QWFinanceController.swift */,
+				CA9189782A7ACBFF007ECD01 /* QWHealthController.swift */,
+				CA91897A2A7ACC25007ECD01 /* QWJSONRepresentable.swift */,
+				CAD995A82A7F0B8000EA66ED /* QWDatePicker.swift */,
+			);
+			path = QWid;
+			sourceTree = "<group>";
+		};
+		CA91895D2A79C108007ECD01 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CA91895E2A79C108007ECD01 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA9189532A79C106007ECD01 /* QWid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA9189672A79C108007ECD01 /* Build configuration list for PBXNativeTarget "QWid" */;
+			buildPhases = (
+				CA9189502A79C106007ECD01 /* Sources */,
+				CA9189512A79C106007ECD01 /* Frameworks */,
+				CA9189522A79C106007ECD01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QWid;
+			productName = QWid;
+			productReference = CA9189542A79C106007ECD01 /* QWid.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA91894C2A79C106007ECD01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					CA9189532A79C106007ECD01 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = CA91894F2A79C106007ECD01 /* Build configuration list for PBXProject "QWid" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA91894B2A79C106007ECD01;
+			productRefGroup = CA9189552A79C106007ECD01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA9189532A79C106007ECD01 /* QWid */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA9189522A79C106007ECD01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA91895F2A79C108007ECD01 /* Preview Assets.xcassets in Resources */,
+				CA91895C2A79C108007ECD01 /* Assets.xcassets in Resources */,
+				CA91897D2A7AE38D007ECD01 /* QWJSONHealthData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA9189502A79C106007ECD01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA91896D2A79C8FC007ECD01 /* QWQAView.swift in Sources */,
+				CAD995AF2A8200AC00EA66ED /* QWMarqueeView.swift in Sources */,
+				CA91897B2A7ACC25007ECD01 /* QWJSONRepresentable.swift in Sources */,
+				CAD995AB2A81B1E000EA66ED /* QWSavingsView.swift in Sources */,
+				CA9189612A79C108007ECD01 /* Persistence.swift in Sources */,
+				CA91895A2A79C106007ECD01 /* ContentView.swift in Sources */,
+				CAD995AD2A81F95B00EA66ED /* QWProgressView.swift in Sources */,
+				CA9189712A79F3CD007ECD01 /* QWPersonDataViewModel.swift in Sources */,
+				CA9189732A79F737007ECD01 /* QWTimeRepresentable.swift in Sources */,
+				CA9189642A79C108007ECD01 /* QWid.xcdatamodeld in Sources */,
+				CA91896B2A79C1A5007ECD01 /* QWHomeView.swift in Sources */,
+				CA91896F2A79F2F1007ECD01 /* QWPersonData.swift in Sources */,
+				CA9189772A7A0647007ECD01 /* QWFinanceController.swift in Sources */,
+				CAD995A92A7F0B8000EA66ED /* QWDatePicker.swift in Sources */,
+				CA9189792A7ACBFF007ECD01 /* QWHealthController.swift in Sources */,
+				CA9189582A79C106007ECD01 /* QWidApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CA9189652A79C108007ECD01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA9189662A79C108007ECD01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA9189682A79C108007ECD01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"QWid/Preview Content\"";
+				DEVELOPMENT_TEAM = M54A7BX79B;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bohdankachenko.QWid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA9189692A79C108007ECD01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"QWid/Preview Content\"";
+				DEVELOPMENT_TEAM = M54A7BX79B;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bohdankachenko.QWid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA91894F2A79C106007ECD01 /* Build configuration list for PBXProject "QWid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA9189652A79C108007ECD01 /* Debug */,
+				CA9189662A79C108007ECD01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA9189672A79C108007ECD01 /* Build configuration list for PBXNativeTarget "QWid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA9189682A79C108007ECD01 /* Debug */,
+				CA9189692A79C108007ECD01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CA9189622A79C108007ECD01 /* QWid.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CA9189632A79C108007ECD01 /* QWid.xcdatamodel */,
+			);
+			currentVersion = CA9189632A79C108007ECD01 /* QWid.xcdatamodel */;
+			path = QWid.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CA91894C2A79C106007ECD01 /* Project object */;
+}

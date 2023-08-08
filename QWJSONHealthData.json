@@ -1,0 +1,147 @@
+{
+    "health_improvements": {
+        "cardiovascular": [
+            {
+                "time": "1200",
+                "improvement": "Heart rate drops"
+            },
+            {
+                "time": "43200",
+                "improvement": "Carbon monoxide levels in the blood decrease, improving oxygen levels"
+            },
+            {
+                "time": "31536000",
+                "improvement": "The risk of coronary heart disease decreases sharply"
+            },
+            {
+                "time": "-1",
+                "improvement": "Reduced inflammation and hypercoagulability, improvement in high-density lipoprotein cholesterol (HDL-C) levels, reduced development and progression of atherosclerosis, reduced risk of abdominal aortic aneurysm, atrial fibrillation, sudden cardiac death, heart failure, venous thromboembolism, and peripheral arterial disease"
+            }
+        ],
+        "respiratory": [
+            {
+                "time": "2592000",
+                "improvement": "Coughing and shortness of breath decrease as lung function begins to improve"
+            },
+            {
+                "time": "23328000",
+                "improvement": "Cilia in the lungs recover, helping to clean the lungs and reduce infections"
+            },
+            {
+                "time": "-1",
+                "improvement": "Reduced risk of developing COPD, slowed progression of COPD, reduced respiratory symptoms (e.g., cough, sputum production, wheezing), reduced respiratory infections (e.g., bronchitis, pneumonia), improved lung function, and improved treatment outcomes for persons with asthma"
+            }
+        ],
+        "mental_psychological_changes": [
+            {
+                "time": "259200",
+                "improvement": "THC is depleted from the body, which can cause moodiness, irritability, and cravings"
+            },
+            {
+                "time": "1814400",
+                "improvement": "Many people find withdrawal symptoms, including anxiety and irritability, start to disappear"
+            },
+            {
+                "time": "-1",
+                "improvement": "Reduced depression, anxiety, and stress, and improved positive mood and quality of life compared with continuing to smoke"
+            }
+        ],
+        "physical_appearance_changes": [
+            {
+                "time": "172800",
+                "improvement": "Sense of taste and smell begin to improve"
+            },
+            {
+                "time": "604800",
+                "improvement": "Teeth start to look cleaner and breath improves"
+            },
+            {
+                "time": "7257600",
+                "improvement": "Blood circulation improves, which can lead to healthier-looking skin"
+            },
+            {
+                "time": "-1",
+                "improvement": "Reduced risk of yellowing teeth, bad breath, and gum disease. Skin appearance improves due to better blood flow"
+            }
+        ],
+        "immune_system": [
+            {
+                "time": "7257600",
+                "improvement": "Improved blood circulation and increased oxygen levels in the body"
+            },
+            {
+                "time": "-1",
+                "improvement": "Quitting smoking improves circulation, increases oxygen levels, and lowers inflammation, all of which give the immune system a boost, making it easier to fight off colds and other illnesses"
+            }
+        ],
+        "sleep_patterns_energy_levels": [
+            {
+                "time": "1200",
+                "improvement": "Heart rate drops and returns to normal, which can contribute to better sleep"
+            },
+            {
+                "time": "43200",
+                "improvement": "The body cleanses itself of excess carbon monoxide, increasing oxygen levels which can contribute to better sleep and increased energy"
+            },
+            {
+                "time": "86400",
+                "improvement": "Blood pressure begins to drop, and oxygen levels increase, making physical activity easier and potentially leading to better sleep"
+            },
+            {
+                "time": "2592000",
+                "improvement": "Lung function begins to improve, which can contribute to better sleep as breathing becomes easier"
+            },
+            {
+                "time": "-1",
+                "improvement": "As the body continues to heal, sleep patterns generally improve. Increased oxygen levels and improved lung function can also lead to increased energy levels"
+            }
+        ],
+        "reproductive_health_women": [
+            {
+                "time": "Before or early in pregnancy",
+                "improvement": "Reduced risk for a small-for-gestational-age baby"
+            },
+            {
+                "time": "During pregnancy",
+                "improvement": "Reduced risk of delivering a low birth weight baby"
+            },
+            {
+                "time": "Early in pregnancy",
+                "improvement": "Eliminates the adverse effects of smoking on fetal growth and may reduce the risk of preterm delivery"
+            }
+        ]
+    },
+    "additional_data": [
+        {
+            "category": "mental_psychological_changes",
+            "data": [
+                {
+                    "time": "86400",
+                    "improvement": "Physical symptoms of thc withdrawal begin"
+                },
+                {
+                    "time": "259200",
+                    "improvement": "Symptoms peak and can include headaches, sweating, restlessness, tremors, difficulty sleeping, increased appetite, abdominal cramps, and digestive issues"
+                },
+                {
+                    "time": "1814400",
+                    "improvement": "Physical symptoms gradually subside"
+                }
+            ]
+        },
+        {
+            "category": "physical_appearance_changes",
+            "data": [
+                {
+                    "time": "7776000",
+                    "improvement": "The skin begins to repair itself, and increased blood flow helps reduce the appearance of wrinkles and improves the skin’s ability to heal wounds such as acne scars. The complexion may look less gray and pale, and the face may appear brighter with a healthy glow after quitting"
+                },
+                {
+                    "time": "-1",
+                    "improvement": "Quitting smoking can prevent further hair damage"
+                }
+            ]
+        }
+    ]
+}
+
