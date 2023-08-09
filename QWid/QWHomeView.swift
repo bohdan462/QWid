@@ -13,6 +13,7 @@ struct QWHomeView: View {
     @StateObject var qwpersonDataViewModel: QWPersonDataViewModel
     @State var currentIndexOfDescription: Int = 0
     @State var ifAdjustingDate: Bool = false
+    @State var isHealthStatsTapped = false
 
     var body: some View {
         Grid(alignment: .center, horizontalSpacing: 10, verticalSpacing: 10) {
@@ -79,6 +80,12 @@ struct QWHomeView: View {
                             QWMarqueeView(text: qwpersonDataViewModel.healthController.showHealthDescriptions[currentIndexOfDescription].1)
 
                             QWMainBenefitsView(quitDate: qwpersonDataViewModel.userQuestionary.selectedDate)
+                                .onLongPressGesture {
+                                    isHealthStatsTapped = true
+                                }
+                                .sheet(isPresented: $isHealthStatsTapped) {
+                                    QWHealtStatsView(viewModel: qwpersonDataViewModel)
+                                }
 
                         }
 
