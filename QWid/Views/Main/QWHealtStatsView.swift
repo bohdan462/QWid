@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct QWHealtStatsView: View {
-    @StateObject var viewModel: QWPersonDataViewModel
+    var viewModel: QWPersonDataViewModel
     
     let columns = [GridItem(.flexible()), GridItem(.flexible())]
     var body: some View {

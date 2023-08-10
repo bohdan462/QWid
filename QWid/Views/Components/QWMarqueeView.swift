@@ -21,7 +21,7 @@ struct QWMarqueeView: View {
                 .background(GeometryBackground())
                 .offset(x: self.offset, y: 0)
                 .onAppear {
-                    withAnimation(Animation.linear(duration: 20).repeatForever(autoreverses: false)) {
+                    withAnimation(Animation.linear(duration: 50).repeatForever(autoreverses: false)) {
                         self.offset = -self.textWidth
                     }
                 }

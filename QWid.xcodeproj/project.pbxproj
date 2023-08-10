@@ -22,6 +22,12 @@
 		CA9189792A7ACBFF007ECD01 /* QWHealthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9189782A7ACBFF007ECD01 /* QWHealthController.swift */; };
 		CA91897B2A7ACC25007ECD01 /* QWJSONRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA91897A2A7ACC25007ECD01 /* QWJSONRepresentable.swift */; };
 		CA91897D2A7AE38D007ECD01 /* QWJSONHealthData.json in Resources */ = {isa = PBXBuildFile; fileRef = CA91897C2A7ACF29007ECD01 /* QWJSONHealthData.json */; };
+		CA9EAAF22A848AC7003AF440 /* QWTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9EAAF12A848AC7003AF440 /* QWTimerView.swift */; };
+		CA9EAAFA2A8492B6003AF440 /* QWBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9EAAF92A8492B6003AF440 /* QWBlur.swift */; };
+		CAA3CF262A854A83004D9839 /* QWHealthItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA3CF252A854A83004D9839 /* QWHealthItemView.swift */; };
+		CAA3CF282A8554BC004D9839 /* QWMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA3CF272A8554BC004D9839 /* QWMainView.swift */; };
+		CAA3CF2A2A85605F004D9839 /* QWHealthProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA3CF292A85605F004D9839 /* QWHealthProgressView.swift */; };
+		CABF45192A84826D00338F2F /* QWItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABF45182A84826D00338F2F /* QWItemView.swift */; };
 		CAD995A92A7F0B8000EA66ED /* QWDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD995A82A7F0B8000EA66ED /* QWDatePicker.swift */; };
 		CAD995AB2A81B1E000EA66ED /* QWSavingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD995AA2A81B1E000EA66ED /* QWSavingsView.swift */; };
 		CAD995AD2A81F95B00EA66ED /* QWProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD995AC2A81F95B00EA66ED /* QWProgressView.swift */; };
@@ -50,6 +56,12 @@
 		CA9189782A7ACBFF007ECD01 /* QWHealthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWHealthController.swift; sourceTree = "<group>"; };
 		CA91897A2A7ACC25007ECD01 /* QWJSONRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWJSONRepresentable.swift; sourceTree = "<group>"; };
 		CA91897C2A7ACF29007ECD01 /* QWJSONHealthData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = QWJSONHealthData.json; sourceTree = "<group>"; };
+		CA9EAAF12A848AC7003AF440 /* QWTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWTimerView.swift; sourceTree = "<group>"; };
+		CA9EAAF92A8492B6003AF440 /* QWBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWBlur.swift; sourceTree = "<group>"; };
+		CAA3CF252A854A83004D9839 /* QWHealthItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWHealthItemView.swift; sourceTree = "<group>"; };
+		CAA3CF272A8554BC004D9839 /* QWMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWMainView.swift; sourceTree = "<group>"; };
+		CAA3CF292A85605F004D9839 /* QWHealthProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWHealthProgressView.swift; sourceTree = "<group>"; };
+		CABF45182A84826D00338F2F /* QWItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWItemView.swift; sourceTree = "<group>"; };
 		CAD995A82A7F0B8000EA66ED /* QWDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QWDatePicker.swift; sourceTree = "<group>"; };
 		CAD995AA2A81B1E000EA66ED /* QWSavingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWSavingsView.swift; sourceTree = "<group>"; };
 		CAD995AC2A81F95B00EA66ED /* QWProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWProgressView.swift; sourceTree = "<group>"; };
@@ -75,14 +87,7 @@
 		CA91894B2A79C106007ECD01 = {
 			isa = PBXGroup;
 			children = (
-				CAD995B82A8303E200EA66ED /* QWHealtStatsView.swift */,
 				CAD995B62A82EDC000EA66ED /* QWTimerDateStringRepresentable.swift */,
-				CAD995B42A82D27700EA66ED /* QWMainBenefitsView.swift */,
-				CAD995B22A82CE2000EA66ED /* QWCircleProgressView.swift */,
-				CAD995B02A82CC8C00EA66ED /* QWTimeBasedProgressView.swift */,
-				CAD995AE2A8200AC00EA66ED /* QWMarqueeView.swift */,
-				CAD995AC2A81F95B00EA66ED /* QWProgressView.swift */,
-				CAD995AA2A81B1E000EA66ED /* QWSavingsView.swift */,
 				CA91897C2A7ACF29007ECD01 /* QWJSONHealthData.json */,
 				CA9189562A79C106007ECD01 /* QWid */,
 				CA9189552A79C106007ECD01 /* Products */,
@@ -101,20 +106,14 @@
 			isa = PBXGroup;
 			children = (
 				CA9189572A79C106007ECD01 /* QWidApp.swift */,
+				CA9EAAF42A848CB7003AF440 /* Models */,
+				CA9EAAF52A848CC2003AF440 /* View Models */,
+				CA9EAAF32A848CAC003AF440 /* Views */,
 				CA9189592A79C106007ECD01 /* ContentView.swift */,
 				CA91895B2A79C108007ECD01 /* Assets.xcassets */,
 				CA9189602A79C108007ECD01 /* Persistence.swift */,
 				CA9189622A79C108007ECD01 /* QWid.xcdatamodeld */,
 				CA91895D2A79C108007ECD01 /* Preview Content */,
-				CA91896A2A79C1A5007ECD01 /* QWHomeView.swift */,
-				CA9189702A79F3CD007ECD01 /* QWPersonDataViewModel.swift */,
-				CA91896C2A79C8FC007ECD01 /* QWQAView.swift */,
-				CA91896E2A79F2F1007ECD01 /* QWPersonData.swift */,
-				CA9189722A79F737007ECD01 /* QWTimeRepresentable.swift */,
-				CA9189762A7A0647007ECD01 /* QWFinanceController.swift */,
-				CA9189782A7ACBFF007ECD01 /* QWHealthController.swift */,
-				CA91897A2A7ACC25007ECD01 /* QWJSONRepresentable.swift */,
-				CAD995A82A7F0B8000EA66ED /* QWDatePicker.swift */,
 			);
 			path = QWid;
 			sourceTree = "<group>";
@@ -125,6 +124,73 @@
 				CA91895E2A79C108007ECD01 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CA9EAAF32A848CAC003AF440 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA9EAAF72A848D2D003AF440 /* Main */,
+				CA9EAAF62A848CDF003AF440 /* Components */,
+				CA9EAAF82A848D71003AF440 /* Controllers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CA9EAAF42A848CB7003AF440 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CA91896E2A79F2F1007ECD01 /* QWPersonData.swift */,
+				CA9189722A79F737007ECD01 /* QWTimeRepresentable.swift */,
+				CA91897A2A7ACC25007ECD01 /* QWJSONRepresentable.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CA9EAAF52A848CC2003AF440 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				CA9189702A79F3CD007ECD01 /* QWPersonDataViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		CA9EAAF62A848CDF003AF440 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CA9EAAF12A848AC7003AF440 /* QWTimerView.swift */,
+				CAD995B02A82CC8C00EA66ED /* QWTimeBasedProgressView.swift */,
+				CAD995B42A82D27700EA66ED /* QWMainBenefitsView.swift */,
+				CAD995AE2A8200AC00EA66ED /* QWMarqueeView.swift */,
+				CAD995AA2A81B1E000EA66ED /* QWSavingsView.swift */,
+				CAD995A82A7F0B8000EA66ED /* QWDatePicker.swift */,
+				CA9EAAF92A8492B6003AF440 /* QWBlur.swift */,
+				CAD995B22A82CE2000EA66ED /* QWCircleProgressView.swift */,
+				CAD995AC2A81F95B00EA66ED /* QWProgressView.swift */,
+				CAA3CF292A85605F004D9839 /* QWHealthProgressView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CA9EAAF72A848D2D003AF440 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CABF45182A84826D00338F2F /* QWItemView.swift */,
+				CA91896A2A79C1A5007ECD01 /* QWHomeView.swift */,
+				CAD995B82A8303E200EA66ED /* QWHealtStatsView.swift */,
+				CA91896C2A79C8FC007ECD01 /* QWQAView.swift */,
+				CAA3CF252A854A83004D9839 /* QWHealthItemView.swift */,
+				CAA3CF272A8554BC004D9839 /* QWMainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CA9EAAF82A848D71003AF440 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA9189782A7ACBFF007ECD01 /* QWHealthController.swift */,
+				CA9189762A7A0647007ECD01 /* QWFinanceController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,14 +267,18 @@
 				CA91896D2A79C8FC007ECD01 /* QWQAView.swift in Sources */,
 				CAD995AF2A8200AC00EA66ED /* QWMarqueeView.swift in Sources */,
 				CA91897B2A7ACC25007ECD01 /* QWJSONRepresentable.swift in Sources */,
+				CAA3CF282A8554BC004D9839 /* QWMainView.swift in Sources */,
 				CAD995B52A82D27700EA66ED /* QWMainBenefitsView.swift in Sources */,
 				CAD995AB2A81B1E000EA66ED /* QWSavingsView.swift in Sources */,
 				CA9189612A79C108007ECD01 /* Persistence.swift in Sources */,
 				CAD995B32A82CE2000EA66ED /* QWCircleProgressView.swift in Sources */,
 				CA91895A2A79C106007ECD01 /* ContentView.swift in Sources */,
+				CAA3CF262A854A83004D9839 /* QWHealthItemView.swift in Sources */,
 				CAD995AD2A81F95B00EA66ED /* QWProgressView.swift in Sources */,
+				CA9EAAF22A848AC7003AF440 /* QWTimerView.swift in Sources */,
 				CA9189712A79F3CD007ECD01 /* QWPersonDataViewModel.swift in Sources */,
 				CA9189732A79F737007ECD01 /* QWTimeRepresentable.swift in Sources */,
+				CABF45192A84826D00338F2F /* QWItemView.swift in Sources */,
 				CA9189642A79C108007ECD01 /* QWid.xcdatamodeld in Sources */,
 				CAD995B12A82CC8C00EA66ED /* QWTimeBasedProgressView.swift in Sources */,
 				CAD995B72A82EDC000EA66ED /* QWTimerDateStringRepresentable.swift in Sources */,
@@ -216,9 +286,11 @@
 				CA91896F2A79F2F1007ECD01 /* QWPersonData.swift in Sources */,
 				CA9189772A7A0647007ECD01 /* QWFinanceController.swift in Sources */,
 				CAD995B92A8303E200EA66ED /* QWHealtStatsView.swift in Sources */,
+				CA9EAAFA2A8492B6003AF440 /* QWBlur.swift in Sources */,
 				CAD995A92A7F0B8000EA66ED /* QWDatePicker.swift in Sources */,
 				CA9189792A7ACBFF007ECD01 /* QWHealthController.swift in Sources */,
 				CA9189582A79C106007ECD01 /* QWidApp.swift in Sources */,
+				CAA3CF2A2A85605F004D9839 /* QWHealthProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

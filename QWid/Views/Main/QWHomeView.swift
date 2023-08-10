@@ -10,7 +10,7 @@ import AudioToolbox
 
 struct QWHomeView: View {
 
-    @StateObject var qwpersonDataViewModel: QWPersonDataViewModel
+    @ObservedObject var qwpersonDataViewModel: QWPersonDataViewModel
     @State var currentIndexOfDescription: Int = 0
     @State var ifAdjustingDate: Bool = false
     @State var isHealthStatsTapped = false
@@ -20,33 +20,7 @@ struct QWHomeView: View {
 
             HStack(alignment: .center, spacing: 10){
 
-                ZStack {
-                    ForEach(Array(qwpersonDataViewModel.quitTimerRepresentable.fullDateToString.enumerated()), id: \.offset) { index, letter in
-                        VStack {
-                            Text(String(letter))
-
-                            Spacer()
-                        }
-                        .rotationEffect(.degrees(4.9 * Double(index) + Double(qwpersonDataViewModel.quitTimerRepresentable.seconds)))
-                        .animation(Animation.easeOut)
-                    }
-
-                    Text("\(qwpersonDataViewModel.quitTimerRepresentable.seconds)")
-                        .font(Font.system(size: 80))
-                        .bold()
-                        .foregroundColor(Color.primary)
-                        .padding(20)
-                        .cornerRadius(10)
-
-                }
-                .frame(width: 200, height: 200)
-                .font(.system(size: 12, design: .monospaced)).bold()
-                .onLongPressGesture {
-                    ifAdjustingDate = true
-                }
-                .sheet(isPresented: $ifAdjustingDate) {
-                    QWQAView(model: qwpersonDataViewModel)
-                }
+                QWTimerView(qwpersonDataViewModel: qwpersonDataViewModel)
 
 
                 RoundedRectangle(cornerRadius: 20)
@@ -171,3 +145,4 @@ struct QWHomeView_Previews: PreviewProvider {
         QWHomeView(qwpersonDataViewModel: QWPersonDataViewModel(userQuestionary: QWPersonData()))
     }
 }
+
