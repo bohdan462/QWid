@@ -129,6 +129,7 @@
 		CA9EAAF32A848CAC003AF440 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CACCC8A42A86AB80007E9D6D /* Items */,
 				CA9EAAF72A848D2D003AF440 /* Main */,
 				CA9EAAF62A848CDF003AF440 /* Components */,
 				CA9EAAF82A848D71003AF440 /* Controllers */,
@@ -174,11 +175,9 @@
 		CA9EAAF72A848D2D003AF440 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				CABF45182A84826D00338F2F /* QWItemView.swift */,
 				CA91896A2A79C1A5007ECD01 /* QWHomeView.swift */,
 				CAD995B82A8303E200EA66ED /* QWHealtStatsView.swift */,
 				CA91896C2A79C8FC007ECD01 /* QWQAView.swift */,
-				CAA3CF252A854A83004D9839 /* QWHealthItemView.swift */,
 				CAA3CF272A8554BC004D9839 /* QWMainView.swift */,
 			);
 			path = Main;
@@ -191,6 +190,15 @@
 				CA9189762A7A0647007ECD01 /* QWFinanceController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CACCC8A42A86AB80007E9D6D /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				CABF45182A84826D00338F2F /* QWItemView.swift */,
+				CAA3CF252A854A83004D9839 /* QWHealthItemView.swift */,
+			);
+			path = Items;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

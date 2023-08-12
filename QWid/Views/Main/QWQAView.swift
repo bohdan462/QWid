@@ -11,11 +11,11 @@ import Combine
 
 struct QWQAView: View {
     
-     @StateObject var model: QWPersonDataViewModel
+     @StateObject var qwPersonDataViewModel: QWPersonDataViewModel
      @State private var isFullScreenPresented = false
     
     init(model: QWPersonDataViewModel) {
-        _model = StateObject(wrappedValue: model)
+        _qwPersonDataViewModel = StateObject(wrappedValue: model)
     }
     
     var body: some View {
@@ -26,10 +26,10 @@ struct QWQAView: View {
                 .padding()
                 .overlay {
                     VStack {
-                        Text("When is the day to quit? \(model.userQuestionary.selectedDate)")
+                        Text("When is the day to quit? \(qwPersonDataViewModel.userQuestionary.selectedDate)")
                             .font(.largeTitle)
                             .padding()
-                        QWDatePicker(model: model)
+                        QWDatePicker(model: qwPersonDataViewModel)
 //
 //                        DatePicker("Select a date", selection: $model.userQuestionary.selectedDate)
 //                            .datePickerStyle(GraphicalDatePickerStyle())
@@ -47,7 +47,7 @@ struct QWQAView: View {
                 .overlay {
                     HStack {
                         Text("Age")
-                        Picker("Select your age", selection: $model.userQuestionary.selectedAge) {
+                        Picker("Select your age", selection: $qwPersonDataViewModel.userQuestionary.selectedAge) {
                             ForEach(16...100, id: \.self) { number in
                                 Text("\(number)")
                                 
@@ -63,16 +63,16 @@ struct QWQAView: View {
                     VStack
                     {
                         VStack{
-                            Stepper(value: $model.userQuestionary.selectedAmountOfConcumption, in: 1...100) {
-                                Text("Amount of consumption: \(model.userQuestionary.selectedAmountOfConcumption)")
+                            Stepper(value: $qwPersonDataViewModel.userQuestionary.selectedAmountOfConcumption, in: 1...100) {
+                                Text("Amount of consumption: \(qwPersonDataViewModel.userQuestionary.selectedAmountOfConcumption)")
                             }
                            
                             
-                            Stepper(value: $model.userQuestionary.selectedPrice, in: 1...100) {
-                                Text("Price per unit: \(model.userQuestionary.selectedPrice)")
+                            Stepper(value: $qwPersonDataViewModel.userQuestionary.selectedPrice, in: 1...100) {
+                                Text("Price per unit: \(qwPersonDataViewModel.userQuestionary.selectedPrice)")
                             }
                             
-                        Picker("Wake and Bake Time", selection: $model.userQuestionary.selectedWakeAndBakeTimeInterval) {
+                        Picker("Wake and Bake Time", selection: $qwPersonDataViewModel.userQuestionary.selectedWakeAndBakeTimeInterval) {
                             ForEach(WakeAndBakeTimeInterval.allCases) { substance in
                                 Text(substance.rawValue.capitalized)
                                     .tag(substance)
@@ -88,7 +88,8 @@ struct QWQAView: View {
                                 Text("Okay")
                             }
                             .fullScreenCover(isPresented: $isFullScreenPresented) {
-                                QWHomeView(qwpersonDataViewModel: model)
+//                                QWHomeView(qwpersonDataViewModel: model)
+                                QWMainView(qwpersonDataViewModel: qwPersonDataViewModel)
                             }
                     }
                         .padding()

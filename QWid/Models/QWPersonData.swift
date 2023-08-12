@@ -19,7 +19,7 @@ enum WakeAndBakeTimeInterval: String, CaseIterable, Identifiable {
 }
 
 class QWPersonData: ObservableObject {
-    var selectedDate: Date = Date()
+   @Published var selectedDate: Date = Date()
 //    var selectedDate: QWDate = QWDate(date: Date())
     var selectedTime: QWTime = QWTime(time: Date())
     var selectedAge: Int = 23

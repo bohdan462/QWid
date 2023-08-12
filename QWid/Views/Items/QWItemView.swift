@@ -10,40 +10,96 @@ import SwiftUI
 struct QWItemView: View {
     
     @ObservedObject var qwpersonDataViewModel: QWPersonDataViewModel
-   @State var title: String
-   @State var number: Int
-   @State var numberDescriptor: String
-   @State var futureDescription: String
-//   @State var description: String
-   @State var progressProvider: () -> Double
+    var featuredTitleType: FeaturedTitleType
+    var displayType: DisplayType
+    var subDescriptionType: SubDescriptionType
+    var featuredNumberType: FeaturedNumberType
+    
+    enum FeaturedTitleType {
+        case saved
+        case ozNotSmoked
+    }
+    
+    enum DisplayType {
+        case totalSaved
+        case ounces
+    }
+    
+    enum SubDescriptionType {
+        case usd
+        case oz
+    }
+    
+    enum FeaturedNumberType {
+        case inAYear
+        case joints
+    }
+    
+    
+    var displayFeaturedTitleValue: String {
+        switch featuredTitleType {
+        case .saved:
+            return "Saved"
+        case .ozNotSmoked:
+            return "Skipped"
+        }
+    }
+    
+    var displayValue: String {
+        switch displayType {
+        case .totalSaved:
+            return "\(Int(qwpersonDataViewModel.totalSaved))"
+        case .ounces:
+            return "\(Int(qwpersonDataViewModel.ouncesNotSmoked))"
+        }
+    }
+    
+    var displayFeaturedNumberValue: String {
+        switch subDescriptionType {
+        case .usd:
+            return "USD"
+        case .oz:
+            return "oz"
+        }
+    }
+    
+    
+    
+    var displaySubDescriptionValue: String {
+        switch featuredNumberType {
+        case .inAYear:
+            return "In a Year: \(qwpersonDataViewModel.totalSaved) "
+        case .joints:
+            return "\(qwpersonDataViewModel.jointsNotSmoked) skipped joints"
+        }
+    }
     
     var body: some View {
         ZStack {
             VStack(alignment: .leading, spacing: 12) {
-                Text(title)
+                Text(displayFeaturedTitleValue)
                     .font(.footnote)
                     .padding(.top, 5)
                     .foregroundColor(.white)
-                    VStack(alignment: .center) {
-                        Text("\(number)")
-                            .font(Font.system(size: 80))
-                        Text(numberDescriptor)
-                            .font(.title3).bold()
-                            .opacity(0.7)
-
-                    }
-                    .padding(.leading, 30)
-                Text(futureDescription)
+                VStack(alignment: .center) {
+                    Text(displayValue)
+                        .font(Font.system(size: 40))
+                    Text(displayFeaturedNumberValue)
+                        .font(.title3).bold()
+                        .opacity(0.7)
+                    
+                }
+                .padding(.leading, 30)
+                Text(displaySubDescriptionValue)
                     .font(.footnote)
                     .opacity(0.7)
                     .padding(.top)
                     .padding(.leading, 8)
-                    
-
-                ProgressView(
-                    progressProvider: progressProvider,
-                    restartInterval: 1.0
-                )
+                
+                
+                ProgressView(progressProvider: {
+                    return qwpersonDataViewModel.totalSaved
+                }, restartInterval: 1)
                 
             }
             
@@ -59,7 +115,7 @@ struct QWItemView: View {
                 .stroke(Color.blue, lineWidth: 2)
         }
         
-       
+        
         
     }
     

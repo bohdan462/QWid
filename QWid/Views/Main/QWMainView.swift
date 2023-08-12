@@ -11,6 +11,7 @@ struct QWMainView: View {
     
     @ObservedObject var qwpersonDataViewModel: QWPersonDataViewModel
     @State var currentIndexOfDescription: Int = 0
+    let columns = [GridItem(.flexible())]
     
     var body: some View {
         ScrollView {
@@ -21,20 +22,23 @@ struct QWMainView: View {
                     QWMarqueeView(text: qwpersonDataViewModel.healthController.showHealthDescriptions[currentIndexOfDescription].1)
                         .padding(.bottom, 30)
                     HStack(spacing: 20) {
-//                        QWItemView(qwpersonDataViewModel: qwpersonDataViewModel)
-                        QWItemView(qwpersonDataViewModel: qwpersonDataViewModel, title: "Saved", number: Int(qwpersonDataViewModel.totalSaved), numberDescriptor: "USD", futureDescription: "$200 /year", progressProvider: {qwpersonDataViewModel.totalSaved})
-                        QWItemView(qwpersonDataViewModel: qwpersonDataViewModel, title: "Avoided", number: Int(qwpersonDataViewModel.ouncesNotSmoked), numberDescriptor: "OUNC", futureDescription: "\(qwpersonDataViewModel.jointsNotSmoked) joints", progressProvider: {qwpersonDataViewModel.ouncesNotSmoked})
-//                        QWItemView(qwpersonDataViewModel: qwpersonDataViewModel)
+                        QWItemView(qwpersonDataViewModel: qwpersonDataViewModel, featuredTitleType: .saved, displayType: .totalSaved, subDescriptionType: .usd, featuredNumberType: .inAYear)
+                        QWItemView(qwpersonDataViewModel: qwpersonDataViewModel, featuredTitleType: .ozNotSmoked, displayType: .ounces, subDescriptionType: .oz, featuredNumberType: .joints)
                     }
                     
                     .padding(.bottom, 30)
                     Text("Health")
                         .font(.largeTitle.bold()).padding(.leading, -150)
-                    VStack(spacing: 10) {
-//                        QWHealthItemView(qwpersonDataViewModel: qwpersonDataViewModel, title: qwpersonDataViewModel.healthController., image: <#T##String#>, description: <#T##String#>, date: <#T##Date#>, progressProvider: <#T##() -> Double#>)
-//                        QWHealthItemView(qwpersonDataViewModel: qwpersonDataViewModel)
-//                        QWHealthItemView(qwpersonDataViewModel: qwpersonDataViewModel)
+                    LazyVGrid(columns: columns) {
+                        ForEach(qwpersonDataViewModel.healthController.sortedTupleSinceQuitDay, id: \.0) { benefit in
+                            
+                            QWHealthItemView(qwpersonDataViewModel: qwpersonDataViewModel, title: " ", image: " ", description: benefit.1, maxValue: Int(benefit.0) ?? 0)
+                                
+                            
+                        }
+                        
                     }
+                    
                     
                 }
                 
