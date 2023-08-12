@@ -17,6 +17,7 @@ struct QWHealthItemView: View {
     
    @State var whenDone: Int = 5
     @State var maxValue: Int
+    @State var date: Date
     
     var body: some View {
         ZStack {
@@ -48,7 +49,7 @@ struct QWHealthItemView: View {
                 .padding()
                 .padding(.bottom)
                 Spacer()
-                QWHealthProgressView(quitDate: qwpersonDataViewModel.userQuestionary.selectedDate, maxValue: maxValue)
+                QWHealthProgressView(quitDate: date, maxValue: maxValue)
                 .padding()
                 
             }

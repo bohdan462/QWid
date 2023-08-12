@@ -42,21 +42,37 @@ struct QWHealthProgressView: View {
             }
         }
     }
-
+    
     private func startProgressTimer() {
         timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { _ in
+            let elapsedSeconds = Date().timeIntervalSince(quitDate)
+            print("Elapsed Seconds: \(elapsedSeconds)")
+            print("Progress: \(progress)")
             animationProgress = progress
+            
+            print("Animation Progress: \(animationProgress)")
             
             if animationProgress >= 1.0 {
                 timer?.invalidate()
             }
         }
     }
+
+
+//    private func startProgressTimer() {
+//        timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { _ in
+//            animationProgress = progress
+//
+//            if animationProgress >= 1.0 {
+//                timer?.invalidate()
+//            }
+//        }
+//    }
 }
 
 
 struct QWHealthProgressView_Previews: PreviewProvider {
     static var previews: some View {
-        QWHealthProgressView(quitDate: Date().addingTimeInterval(-500), maxValue: 1200)
+        QWHealthProgressView(quitDate: QWPersonData().selectedDate, maxValue: 1000)
     }
 }

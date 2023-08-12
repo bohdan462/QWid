@@ -30,9 +30,9 @@ struct QWMainView: View {
                     Text("Health")
                         .font(.largeTitle.bold()).padding(.leading, -150)
                     LazyVGrid(columns: columns) {
-                        ForEach(qwpersonDataViewModel.healthController.sortedTupleSinceQuitDay, id: \.0) { benefit in
+                        ForEach(qwpersonDataViewModel.healthController.showHealthDescriptions, id: \.0) { benefit in
                             
-                            QWHealthItemView(qwpersonDataViewModel: qwpersonDataViewModel, title: " ", image: " ", description: benefit.1, maxValue: Int(benefit.0) ?? 0)
+                            QWHealthItemView(qwpersonDataViewModel: qwpersonDataViewModel, title: " ", image: " ", description: benefit.1, maxValue: Int(benefit.0), date: qwpersonDataViewModel.userQuestionary.selectedDate)
                                 
                             
                         }

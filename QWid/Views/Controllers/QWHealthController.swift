@@ -136,9 +136,9 @@ class QWHealthController  {
             let time1 = secondsFrom(string: tuple1.0)
             let time2 = secondsFrom(string: tuple2.0)
             
-            if time1 == -1 {
+            if time1 == 1 {
                 return false // -1 (lifelong) goes to the end
-            } else if time2 == -1 {
+            } else if time2 == 1 {
                 return true // -1 (lifelong) goes to the end
             } else {
                 var qwTime1 = quitDate
@@ -193,8 +193,8 @@ class QWHealthController  {
 
             let seconds = secondsFrom(string: time)
 
-            if seconds == -1 {
-                matchingDescriptions.append((-1, description))
+            if seconds == 1 {
+//                matchingDescriptions.append((-1, description))
             } else {
                 if quitDateInSeconds <= seconds {
                     matchingDescriptions.append((seconds, description))

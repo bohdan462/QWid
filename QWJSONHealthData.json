@@ -14,7 +14,7 @@
                 "improvement": "The risk of coronary heart disease decreases sharply"
             },
             {
-                "time": "-1",
+                "time": "1",
                 "improvement": "Reduced inflammation and hypercoagulability, improvement in high-density lipoprotein cholesterol (HDL-C) levels, reduced development and progression of atherosclerosis, reduced risk of abdominal aortic aneurysm, atrial fibrillation, sudden cardiac death, heart failure, venous thromboembolism, and peripheral arterial disease"
             }
         ],
@@ -28,7 +28,7 @@
                 "improvement": "Cilia in the lungs recover, helping to clean the lungs and reduce infections"
             },
             {
-                "time": "-1",
+                "time": "1",
                 "improvement": "Reduced risk of developing COPD, slowed progression of COPD, reduced respiratory symptoms (e.g., cough, sputum production, wheezing), reduced respiratory infections (e.g., bronchitis, pneumonia), improved lung function, and improved treatment outcomes for persons with asthma"
             }
         ],
@@ -42,7 +42,7 @@
                 "improvement": "Many people find withdrawal symptoms, including anxiety and irritability, start to disappear"
             },
             {
-                "time": "-1",
+                "time": "1",
                 "improvement": "Reduced depression, anxiety, and stress, and improved positive mood and quality of life compared with continuing to smoke"
             }
         ],
@@ -60,7 +60,7 @@
                 "improvement": "Blood circulation improves, which can lead to healthier-looking skin"
             },
             {
-                "time": "-1",
+                "time": "1",
                 "improvement": "Reduced risk of yellowing teeth, bad breath, and gum disease. Skin appearance improves due to better blood flow"
             }
         ],
@@ -70,7 +70,7 @@
                 "improvement": "Improved blood circulation and increased oxygen levels in the body"
             },
             {
-                "time": "-1",
+                "time": "1",
                 "improvement": "Quitting smoking improves circulation, increases oxygen levels, and lowers inflammation, all of which give the immune system a boost, making it easier to fight off colds and other illnesses"
             }
         ],
@@ -92,7 +92,7 @@
                 "improvement": "Lung function begins to improve, which can contribute to better sleep as breathing becomes easier"
             },
             {
-                "time": "-1",
+                "time": "1",
                 "improvement": "As the body continues to heal, sleep patterns generally improve. Increased oxygen levels and improved lung function can also lead to increased energy levels"
             }
         ],
@@ -137,7 +137,7 @@
                     "improvement": "The skin begins to repair itself, and increased blood flow helps reduce the appearance of wrinkles and improves the skin’s ability to heal wounds such as acne scars. The complexion may look less gray and pale, and the face may appear brighter with a healthy glow after quitting"
                 },
                 {
-                    "time": "-1",
+                    "time": "1",
                     "improvement": "Quitting smoking can prevent further hair damage"
                 }
             ]
