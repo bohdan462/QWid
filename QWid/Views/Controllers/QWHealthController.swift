@@ -58,14 +58,6 @@ class QWHealthController  {
         sortImprovementSince(quitDate: model!.selectedDate)
     }
     
-//    var showHealthDescriptions: [String] {
-//        if model != nil {
-//           return showHealthImprovement(quitDate: model!.selectedDate)
-//        } else {
-//            return []
-//        }
-//    }
-    
     var showHealthDescriptions: [(Int, String)] {
         if model != nil {
            return showHealthImprovement(quitDate: model!.selectedDate)

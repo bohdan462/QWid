@@ -19,6 +19,7 @@ struct QWMainView: View {
                 VStack(spacing: 10) {
                     QWTimerView(qwpersonDataViewModel: qwpersonDataViewModel)
                         .frame(height: 400)
+                    
                     QWMarqueeView(text: qwpersonDataViewModel.healthController.showHealthDescriptions[currentIndexOfDescription].1)
                         .padding(.bottom, 30)
                     HStack(spacing: 20) {

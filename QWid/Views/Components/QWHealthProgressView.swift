@@ -11,16 +11,16 @@ struct QWHealthProgressView: View {
     let quitDate: Date
     let maxValue: Int  // Maximum value in seconds
 
-    @State private var animationProgress: Double = 0.0
+    @State private var elapsedSeconds: Int = 0
     @State private var timer: Timer?
 
     var progress: Double {
-        let elapsedSeconds = Date().timeIntervalSince(quitDate)
-        return min(elapsedSeconds / Double(maxValue), 1.0)
+        return min(Double(elapsedSeconds) / Double(maxValue), 1.0)
     }
 
     var body: some View {
         ZStack {
+            Text("\(progress)")
             GeometryReader { geometry in
                 RoundedRectangle(cornerRadius: 10)
                     .fill(Color.blue.gradient)
@@ -45,16 +45,23 @@ struct QWHealthProgressView: View {
     
     private func startProgressTimer() {
         timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { _ in
-            let elapsedSeconds = Date().timeIntervalSince(quitDate)
-            print("Elapsed Seconds: \(elapsedSeconds)")
-            print("Progress: \(progress)")
-            animationProgress = progress
-            
-            print("Animation Progress: \(animationProgress)")
-            
-            if animationProgress >= 1.0 {
+            let currentInterval = Int(Date().timeIntervalSince(quitDate))
+            if currentInterval < maxValue {
+                elapsedSeconds = currentInterval
+            } else {
+                elapsedSeconds = maxValue
                 timer?.invalidate()
             }
+//            let elapsedSeconds = Date().timeIntervalSince(quitDate)
+//            print("Elapsed Seconds: \(elapsedSeconds)")
+//            print("Progress: \(progress)")
+//            animationProgress = progress
+//
+//            print("Animation Progress: \(animationProgress)")
+//
+//            if animationProgress >= 1.0 {
+//                timer?.invalidate()
+//            }
         }
     }
 
@@ -73,6 +80,6 @@ struct QWHealthProgressView: View {
 
 struct QWHealthProgressView_Previews: PreviewProvider {
     static var previews: some View {
-        QWHealthProgressView(quitDate: QWPersonData().selectedDate, maxValue: 1000)
+        QWHealthProgressView(quitDate: QWPersonData().selectedDate, maxValue: 2000)
     }
 }

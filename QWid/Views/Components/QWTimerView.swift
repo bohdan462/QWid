@@ -39,7 +39,9 @@ struct QWTimerView: View {
         .sheet(isPresented: $ifAdjustingDate) {
             QWQAView(model: qwpersonDataViewModel)
         }
+        .background(Color.red)
     }
+        
 }
 
 
