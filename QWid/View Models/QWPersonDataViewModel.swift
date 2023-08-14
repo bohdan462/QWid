@@ -38,6 +38,48 @@ class QWPersonDataViewModel: ObservableObject {
     var ouncesNotSmokedFormattedString: String {
         String(format: "%.1f", ouncesNotSmoked)
     }
+    
+    var showCardiovascularDescription: (Int, String) {
+        let time = secondsFrom(string: healthController.nextMilestone(for: .cardiovascular)!.0)
+        let description = healthController.nextMilestone(for: .cardiovascular)?.1 ?? "no description"
+        
+        return (time, description)
+    }
+    
+    var showRespiratoryDescription: (Int, String) {
+        let time = secondsFrom(string: healthController.nextMilestone(for: .respiratory)!.0)
+        let description = healthController.nextMilestone(for: .respiratory)?.1 ?? "no description"
+        
+        return (time, description)
+    }
+    
+    var showMentalPsychologicalChangesDescription: (Int, String) {
+        let time = secondsFrom(string: healthController.nextMilestone(for: .mentalPsychologicalChanges)!.0)
+        let description = healthController.nextMilestone(for: .mentalPsychologicalChanges)?.1 ?? "no description"
+        
+        return (time, description)
+    }
+    
+    var showPhysicalAppearanceChangesDescription: (Int, String) {
+        let time = secondsFrom(string: healthController.nextMilestone(for: .physicalAppearanceChanges)!.0)
+        let description = healthController.nextMilestone(for: .physicalAppearanceChanges)?.1 ?? "no description"
+        
+        return (time, description)
+    }
+    
+    var showImmuneSystemDescription: (Int, String) {
+        let time = secondsFrom(string: healthController.nextMilestone(for: .immuneSystem)!.0)
+        let description = healthController.nextMilestone(for: .immuneSystem)?.1 ?? "no description"
+        
+        return (time, description)
+    }
+    
+    var showSleepPatternsEnergyLevelsDescription: (Int, String) {
+        let time = secondsFrom(string: healthController.nextMilestone(for: .sleepPatternsEnergyLevels)!.0)
+        let description = healthController.nextMilestone(for: .sleepPatternsEnergyLevels)?.1 ?? "no description"
+        
+        return (time, description)
+    }
 
     private var timer: AnyCancellable?
     
@@ -55,6 +97,13 @@ class QWPersonDataViewModel: ObservableObject {
     
     
     /// Functions for performing operations on userQuestionary could go here.
+    func secondsFrom(string: String) -> Int {
+    if let seconds = Int(string) {
+        return seconds
+    } else {
+        return 0
+    }
+}
     
     
     

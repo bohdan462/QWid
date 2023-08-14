@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+
 struct QWHealthProgressView: View {
     let quitDate: Date
     let maxValue: Int  // Maximum value in seconds
@@ -15,6 +17,7 @@ struct QWHealthProgressView: View {
     @State private var timer: Timer?
 
     var progress: Double {
+        
         return min(Double(elapsedSeconds) / Double(maxValue), 1.0)
     }
 

@@ -49,8 +49,12 @@ struct QWHealthItemView: View {
                 .padding()
                 .padding(.bottom)
                 Spacer()
-                QWHealthProgressView(quitDate: date, maxValue: maxValue)
-                .padding()
+                if maxValue == 1 {
+                    
+                } else {
+                    QWHealthProgressView(quitDate: date, maxValue: maxValue)
+                        .padding()
+                }
                 
             }
             
